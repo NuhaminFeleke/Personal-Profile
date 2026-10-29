@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me | Nuhamin Feleke</title>
+</head>
+<body>
+  <header>
+    <h1>Contact Me</h1>
+    <p>I welcome questions, ideas, feedback, and opportunities to connect.</p>
+  </header>
+  <nav aria-label="Main navigation">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Me</a></li>
+    <li><a href="skills.html">Skills &amp; Education</a></li>
+    <li><a href="projects.html">Projects &amp; Achievements</a></li>
+    <li><a href="media.html">My Media &amp; Interests</a></li>
+    <li><a href="contact.html">Contact Me</a></li>
+  </ul>
+</nav>
+  <main>
+    <section>
+      <h2>Contact Information</h2>
+      <p>Professional profile: <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+      <p>Code portfolio: <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+    </section>
+    <section>
+      <h2>Send Me a Message</h2>
+      <p><strong>Note:</strong> This HTML-only form demonstrates browser validation. It will not send or store messages until a backend or form service is connected.</p>
+      <form action="#" method="get">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <p>
+            <label for="full-name">Full Name (required):</label><br>
+            <input type="text" id="full-name" name="full_name" autocomplete="name" placeholder="Enter your full name" required minlength="2" maxlength="80">
+          </p>
+          <p>
+            <label for="email">Email Address (required):</label><br>
+            <input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com" required>
+          </p>
+          <p>
+            <label for="phone">Phone Number (optional):</label><br>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+251 9XX XXX XXX" pattern="[+0-9 ()-]{7,20}" title="Enter a phone number using digits, spaces, +, parentheses, or hyphens.">
+          </p>
+          <p>
+            <label for="website">Your Website (optional):</label><br>
+            <input type="url" id="website" name="website" placeholder="https://example.com">
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Message Details</legend>
+          <p>
+            <label for="subject">Subject (required):</label><br>
+            <select id="subject" name="subject" required>
+              <option value="">-- Select a subject --</option>
+              <option value="question">General question</option>
+              <option value="feedback">Website feedback</option>
+              <option value="collaboration">Project collaboration</option>
+              <option value="learning">Learning and technology</option>
+              <option value="other">Other</option>
+            </select>
+          </p>
+          <p>
+            <label for="referral">How did you find my website?</label><br>
+            <select id="referral" name="referral">
+              <option value="">-- Choose one --</option>
+              <option value="search">Search engine</option>
+              <option value="social">Social media</option>
+              <option value="friend">Friend or colleague</option>
+              <option value="school">School or university</option>
+              <option value="other">Other</option>
+            </select>
+          </p>
+          <p>
+            <label for="message">Your Message (required):</label><br>
+            <textarea id="message" name="message" rows="6" cols="45" placeholder="Write your message here..." required minlength="10" maxlength="2000"></textarea>
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Optional Information</legend>
+          <p>
+            <label for="contact-date">Preferred Contact Date:</label><br>
+            <input type="date" id="contact-date" name="contact_date" min="2026-10-29">
+          </p>
+          <p>
+            <label for="favourite-color">Choose a Favourite Color:</label><br>
+            <input type="color" id="favourite-color" name="favourite_color" value="#336699">
+          </p>
+          <p>
+            <label for="rating">Rate My Website (1–10):</label><br>
+            <input type="number" id="rating" name="rating" min="1" max="10" step="1" value="8">
+          </p>
+          <p>
+            <input type="checkbox" id="reply" name="reply_requested" value="yes">
+            <label for="reply">I would like a reply to my message.</label>
+          </p>
+        </fieldset>
+        <p>
+          <button type="submit">Submit Message</button>
+          <button type="reset">Clear Form</button>
+        </p>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2026 Nuhamin Feleke. Thank you for visiting my website.</p>
+    <p><a href="index.html">Return to Home</a></p>
+  </footer>
+</body>
+</html>
